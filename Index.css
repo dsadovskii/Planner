@@ -1,0 +1,330 @@
+body{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.button_task button{
+  margin-right: 7%;
+  border-radius: 3px 3px 3px 3px;
+  background-color: rgba(216, 216, 216,.5);
+}
+.button_task button:hover{
+  background-color: rgba(216, 216, 216,1);
+}
+caption{
+  text-align:center;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-size: 25px;
+}
+.add_task input{
+  width: 60%;
+  display: block;
+}
+.add_task{
+  margin: 0 auto;
+  width: 95%;
+  background-image: url(note.jpg);
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: 90% 60%;
+  font-family: 'Poiret One', cursive;
+  color: black;
+  display: none;
+  padding-top: 10%;
+  padding-bottom: 15%;
+  padding-left: 40%;
+  border-radius: 5px;
+}
+.hero-unit{
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  background-image: url(gray.jpg);
+  background-position: 0 60%;
+  background-size: 100%;
+  border-radius: 5px;
+  padding: 20%;
+  padding-bottom: 10%;
+  margin-top: 5px;
+  box-shadow: 3px 3px 2px 2px grey;
+  margin-bottom: 7px;
+}
+.actual,.done,.remove{
+  background-color: rgba(249, 248, 247,0);
+  border: 1px solid;
+  border-color: white;
+  border-radius: 5px;
+  padding: 2%;
+  display: none;
+}
+.active{
+  display: block;
+}
+.all{
+  margin-bottom: 7px;
+  width: 100%;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title span{
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: .5px .5px .5px .5px white;
+  border-radius: 5px;
+}
+.title span:hover{
+  cursor: pointer;
+  background-color: rgba(234, 234, 234,.2);
+}
+.body{
+  background-image: url(notebook.jpg);
+  background-size: 100%;
+  background-position: 0 60%;
+  border-radius: 5px;
+  padding: 15px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-bottom: 7px;
+  box-shadow: 3px 3px 2px 2px grey;
+  min-height: 640px;
+}
+.error{
+    border: 2px solid rgb(255, 153, 153);
+    border-top: 3px solid rgb(255, 153, 153);
+    outline: none;
+    border-radius: 5px;
+}
+.pointTable{
+    background-color: rgba(79, 202, 255,.2);
+}
+td, th{
+  border: 1px solid rgb(216, 216, 216);
+  text-align: center;
+  table-layout: fixed;
+  column-rule-width: 33%;
+  overflow: hidden;
+}
+th{
+  background-color: rgba(216, 216, 216,.2);
+}
+.Actual,.Done,.Remove:hover{
+  cursor: pointer;
+}
+.table{
+  width: 100%;
+  color: white;
+  font-family: 'Poiret One', cursive;
+}
+#mainBut{
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(216, 216, 216,.5);
+}#mainBut:hover{
+  background-color: rgba(216, 216, 216,1);
+}
+.cont,.title{
+  margin-left: 29%;
+}
+.pointer{
+  background-color:rgba(234, 234, 234,.1);
+}
+#r{
+  font-family: 'Poiret One', cursive;
+  background-color: #ce9400;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  width: 100%;
+}
+#r h4{
+  color: white;
+  font-size: 45px;
+  margin: 0 auto;
+  text-align: center;
+}
+#r p{
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+  display: none;
+}
+.visible{
+  display: block;
+}
+.slider{
+  display: block;
+  width: 80%;
+  padding: 5%;
+  margin: 0 auto;
+}
+.navigation{
+  width: 100%;
+  text-align: center;
+}
+.slide.visible{
+  z-index: 111;
+}
+.navigation input{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.slider{
+  text-align: center;
+}
+.slider p{
+  margin-bottom: 25px;
+  margin-top: -15px;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+}
+.picture{
+  margin-bottom: 30px;
+}
+footer{
+  font-family: 'Poiret One', cursive;
+  display: flex;
+  flex-direction: column;
+  background-color: #414146;
+  color: white;
+  width: 100%;
+  font-size: 14px;
+}
+legend{
+  color: white;
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 6%;
+  padding-right: 6%;
+  align-items: flex-start;
+
+}
+.left{
+  
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  
+}
+.center{
+  
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 100%;
+  
+}
+.center ul{
+  font-size: 10px;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 3%;
+}
+.about{
+  color: white;
+  background-color: black;
+  width: 30%;
+  box-shadow: 0 1px 0 0 white;
+  border:none;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-family: Gothic;
+  font-size: 14px;
+}
+fieldset{
+  border:none;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.bottom ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 6%;
+
+}
+.bottom ul li{
+  margin-left: 60px;
+
+}
+small{
+  margin-left: 6%;
+}
+.center ul{
+  list-style-image: url(bird.png); 
+}
+.pic{
+  margin-top: 20px;
+}
+.pic img{
+  width: 32%;
+}
+.area{
+  background-color: #414146;
+  border:none;
+  box-shadow: 0 1px 0 0 white;
+}
+.submit{
+  background:url(email2.png) 100% no-repeat;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+
+}
+.right ul .adress{
+  list-style-image: url(adress.png); 
+  
+}
+.right ul .phone{
+  list-style-image: url(phone.png); 
+}
+.right ul .email{
+  list-style-image: url(email.png); 
+}
+.famous{
+  width: inherit;
+}
+.tablediv{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 32.4%;
+  height: 32.4%;
+  font-size: 50px;
+  margin: 0 auto;
+
+}
+td,th{
+  border: 2px solid;
+}
+table{
+  border: 2px solid;
+  border-radius: 15px;
+}

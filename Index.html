@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Diplom</title>
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Lobster|Play|Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.ttf">
+  <link rel="stylesheet" type="text/css" href="Index.css">
+  <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.structure.css">
+</head>
+<body>
+<div class="all container">
+  <div class="hero-unit">
+          <h2>Приветствую вас!</h2>
+          <p>Это ваш персональный планировщик, в нем вы можете добавлять для себя задания, редактировать или удалять их. Использовать его очень удобно, попробуйте сами!<br>
+          </p><br>
+          <input type="button" name="" class="btn btn-large" id="mainBut" value="Добавить задание &raquo;">
+  </div>
+  <div class="add_task form-group">
+    <label for="nameTask" tabindex="1" class="control-label"> Название задания: </label>
+    <input type="text" name="task" id="nameTask" size="40" class="form-control"><br>
+     <label for="priorTask" tabindex="2" class="control-label"> Приоритетная дата выполнения: </label>
+    <input type="text" name="prior" id="priorTask" class="form-control"><br>
+      <label for="opisTask" tabindex="3" class="control-label"> Краткое описание: </label>
+    <input type="text" name="opis" id="opisTask" class="form-control"><br>
+    <div class="button_task">
+    <button id="add" class="btn btn-xs">Добавить задание</button>
+    </div>
+  </div>
+<div class="body">  
+<div class="title">
+<span class="lead text-info">Текущие задания</span>
+<span class="lead text-info">Выполненные задания</span>
+<span class="lead text-info">Удаленные задания</span>
+</div>
+<div class="cont actual active">
+
+  <div class="tableDiv">
+    <table class="table table-bordered">
+    <caption>Текущие задания</caption>
+    <thead>
+       <tr>
+           <th class="name">Название</th>
+           <th class="priority">Приоритет</th>
+           <th class="description">Описание</th>
+       </tr>
+    </thead>
+    <tbody class="tbody Actual"></tbody> 
+    </table>
+  </div>
+    <div class="button">
+      <input type="button" name="buttonActualRedact" id="buttonActualRedact" value="Редактировать" class="btn btn-warning btn-xs">
+      <input type="button" name="buttonActualDone" id="buttonActualDone" value="Выполнено" class="btn btn-success btn-xs">
+      <input type="button" name="buttonActualRemove" id="buttonActualRemove" value="Удалить" class="btn btn-danger btn-xs">
+    </div>
+</div>
+
+
+<div class="cont done">
+
+  <div class="tableDiv">
+    <table class="table table-bordered">
+    <caption>Выполненные задания</caption>
+    <thead>
+       <tr>
+           <th class="name">Название</th>
+           <th class="priority">Приоритет</th>
+           <th class="description">Описание</th>
+       </tr>
+    </thead>
+    <tbody class="tbody Done"></tbody> 
+    </table>
+  </div>
+    <div class="button">
+      <input type="button" name="buttonDoneRedact" id="buttonDoneRedact" value="Редактировать и восстановить" class="btn btn-warning btn-xs">
+      <input type="button" name="buttonDoneRemove" id="buttonDoneRemove" value="Удалить" class="btn btn-danger btn-xs">
+    </div>
+</div>
+
+
+<div class="cont remove">
+
+  <div class="tableDiv">
+    <table class="table table-bordered">
+    <caption>Удаленные задания</caption>
+    <thead>
+       <tr>
+           <th class="name">Название</th>
+           <th class="priority">Приоритетная</th>
+           <th class="description">Описание</th>
+       </tr>
+    </thead>
+    <tbody class="tbody Remove"></tbody> 
+    </table>
+  
+    <div class="button">
+      <input type="button" name="buttonRemoveRest" id="buttonRemoveRest" value="Восстановить" class="btn btn-info btn-xs">
+      <input type="button" name="buttonRemove" id="buttonRemove" value="Удалить" class="btn btn-danger btn-xs">
+    </div>
+  </div>
+</div>
+</div>
+<div class="slider">
+<p>Небольшая инструкция по использованию планировщика !</p>
+  <div class="picture">
+    <img src="1.png" class="slide visible">
+    <img src="2.png" class="slide">
+    <img src="3.png" class="slide">
+  </div>
+  <div class="navigation">
+    <input type="radio" name="">
+    <input type="radio" name="">
+    <input type="radio" name="">
+  </div>
+</div>
+</div>
+<!-- <footer>
+  <div class="container" id="r">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="container" id="f">
+    <a href="#"><i class="icon-ok"></i></a>
+    <a href="#"><i class="icon-off"></i></a>
+    <a href="#"><i class="fa fa-vk"></i></a>
+  </div>
+</footer> -->
+<footer>
+    <div class="top">
+      <div class="left">
+      <legend>About us</legend>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+sed diam nonummy nibh euismod tincidunt ut 
+laoreet dolore magna aliquam erat volutpat. Ut wisi 
+enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+sed diam nonummy nibh euismod tincidunt ut 
+laoreet dolore magna aliquam erat volutpat. Ut wisi 
+enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      <button class="about">Learn more</button>
+      </div>
+      <div class="center">
+      <legend>Latest Tweets</legend>
+        <ul>
+          <li>Check Out Dtbaker's @Arduino Sales Notification #System 
+http://t.co/ WBFKIWHJ</li><br>
+          <li>Community Superstar Winner – #OrganicBeeMedia  
+http://t.co/2Fs1nnMj</li><br>
+          <li>Clean #Websites Designs for Your #Inspiration 
+http://t.co/ SnRKu3HJ</li><br>
+          <li>ute Online #Shops http://t.co/ 1PoQN3bJ</li><br>
+          <li>Download 40 vector #icons package for #FREE
+http://t.co/2Fp5GLqn </li>
+        </ul>
+      </div>
+      <div class="right">
+      <legend>Contact info</legend>
+        <ul>
+          <li class="adress">Address: 153 Nezavisimosti prospect, 
+141001 Minsk, Belarus</li>
+          <li class="phone">Phone: +375 44 559 84 14</li>
+          <li class="email">E-mail: dsadovskii@mail.ru</li>
+        </ul><br>
+          <span>Follow me</span><br>
+          <form method="post" action="http://178.124.206.48/fe/form.php">
+          <fieldset>
+          <label for="area">
+            Подписывайтесь и будьте в курсе новых продуктов!
+          </label><br>
+          <input type="email" name="area" class="area" id="area" maxlength="30" size="30" pattern="[A-Za-z]{6,}">
+          <input type="submit" class="submit" value="" id="submit">
+          </fieldset>
+          </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <small>&copy Copyright 2017 -  All Rights Reserved</small>
+      
+    </div>
+  </footer>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="jqueryui/jquery-ui.js"></script>
+<script type="text/javascript" src="Index.js"></script>
+</body>
+</html>
